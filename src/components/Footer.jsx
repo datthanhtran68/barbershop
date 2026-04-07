@@ -1,53 +1,74 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import '../styles/Footer.css'
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white pt-5 pb-4 mt-auto">
-      <div className="container">
-        <div className="row g-4 border-bottom border-secondary pb-5">
-          <div className="col-lg-4">
-            <Link className="footer-logo text-white text-decoration-none" to="/">
-              CLASSIC BARBER
-            </Link>
-            <p className="text-white-50 mb-4 pe-lg-4">Điểm đến tin cậy nhất cho các quý ông tại Việt Nam. Không gian sang trọng, dịch vụ chuyên nghiệp.</p>
-            <div className="d-flex gap-3 fs-3">
-              <a href="#" className="text-white-50"><i className="bi bi-facebook"></i></a>
-              <a href="#" className="text-white-50"><i className="bi bi-instagram"></i></a>
-              <a href="#" className="text-white-50"><i className="bi bi-tiktok"></i></a>
+    <footer className="footer">
+      <div className="footer_top">
+
+        {/* Cột 1 - Thương hiệu */}
+        <div>
+          <div className="footer_logo">BABER</div>
+          <p className="footer_desc">
+            Dịch vụ cắt tóc cao cấp dành cho quý ông hiện đại.
+            Trải nghiệm nghệ thuật cắt tóc truyền thống
+          </p>
+          <div className="footer_socials">
+            <a href="#" className="footer_social-btn">𝕏</a>
+            <a href="#" className="footer_social-btn">f</a>
+            <a href="#" className="footer_social-btn">◎</a>
+          </div>
+        </div>
+
+        {/* Cột 2 - Điều hướng */}
+        <div>
+          <div className="footer_heading">Điều hướng</div>
+          <nav className="footer_nav">
+            <Link to="/" className="footer_nav-link">Trang chủ</Link>
+            <Link to="/about" className="footer_nav-link">Giới thiệu</Link>
+            <Link to="/services" className="footer_nav-link">Dịch vụ</Link>
+            <Link to="/gallery" className="footer_nav-link">Bộ sưu tập</Link>
+            <Link to="/booking" className="footer_nav-link">Đặt lịch</Link>
+          </nav>
+        </div>
+
+        {/* Cột 3 - Liên hệ */}
+        <div>
+          <div className="footer_heading">Liên hệ</div>
+          <div className="footer_contact">
+            <span className="footer_contact-item">101 Phú Diễn, Bắc Từ Liêm, Hà Nội</span>
+            <span className="footer_contact-item">+84 28 1234 5678</span>
+            <span className="footer_contact-item">hello@barber.vn</span>
+          </div>
+        </div>
+
+        {/* Cột 4 - Giờ mở cửa */}
+        <div>
+          <div className="footer_heading">Giờ mở cửa</div>
+          <div className="footer_hours">
+            <div className="footer_hours-item">
+              <span className="footer_hours-day">Thứ 2 - Thứ 6</span>
+              <span className="footer_hours-time">9:00 - 20:00</span>
+            </div>
+            <div className="footer_hours-item">
+              <span className="footer_hours-day">Thứ 7</span>
+
+              <span className="footer_hours-time">10:00 - 18:00</span>
+            </div>
+            <div className="footer_hours-item">
+              <span className="footer_hours-day">Chủ nhật</span>
+              <span className="footer_hours-time">Nghỉ</span>
             </div>
           </div>
-          <div className="col-lg-2">
-            <h5 className="fw-bold mb-4 text-uppercase">Liên kết</h5>
-            <ul className="list-unstyled">
-              <li className="mb-2"><Link to="/" className="text-white-50 text-decoration-none">TRANG CHỦ</Link></li>
-              <li className="mb-2"><Link to="/about" className="text-white-50 text-decoration-none">GIỚI THIỆU</Link></li>
-              <li className="mb-2"><Link to="/services" className="text-white-50 text-decoration-none">DỊCH VỤ</Link></li>
-              <li className="mb-2"><Link to="/gallery" className="text-white-50 text-decoration-none">BỘ SƯU TẬP</Link></li>
-              <li className="mb-2"><Link to="/booking" className="text-white-50 text-decoration-none">ĐẶT LỊCH</Link></li>
-            </ul>
-          </div>
-          <div className="col-lg-3">
-             <h5 className="fw-bold mb-4 text-uppercase">Dịch vụ</h5>
-             <ul className="list-unstyled">
-               <li className="mb-2"><Link to="/services" className="text-white-50 text-decoration-none">Cắt tóc nam</Link></li>
-               <li className="mb-2"><Link to="/services" className="text-white-50 text-decoration-none">Gội đầu thư giãn</Link></li>
-               <li className="mb-2"><Link to="/services" className="text-white-50 text-decoration-none">Chăm sóc râu</Link></li>
-               <li className="mb-2"><Link to="/services" className="text-white-50 text-decoration-none">Tẩy da chết</Link></li>
-             </ul>
-          </div>
-          <div className="col-lg-3">
-            <h5 className="fw-bold mb-4 text-uppercase">Liên hệ</h5>
-            <p className="text-white-50 mb-2"><i className="bi bi-geo-alt me-2"></i> 123 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
-            <p className="text-white-50 mb-2"><i className="bi bi-telephone me-2"></i> 024 - 1234 5678</p>
-            <p className="text-white-50 mb-0"><i className="bi bi-envelope me-2"></i> contact@classicbarber.vn</p>
-          </div>
         </div>
-        <div className="text-center pt-4 text-white-50 small">
-          <p className="mb-0">&copy; {new Date().getFullYear()} Classic Barbershop. Tất cả quyền được bảo lưu.</p>
-        </div>
+
+      </div>
+
+      <div className="footer_bottom">
+        © Copyright 2026, All Rights Reserved
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

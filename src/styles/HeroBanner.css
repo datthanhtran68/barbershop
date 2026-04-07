@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 710px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.hero_content {
+    position: relative;
+    z-index: 3;
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+    padding: 0 120px; /* Chỉ giữ duy nhất padding để thẳng hàng Header */
+}
+
+/* Khung nội dung 440px như Figma */
+.hero_title {
+    width: 440px; 
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.hero_desc {
+    width: 440px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero_btn {
+    width: 232px;
+    height: 67px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.hero_btn:hover {
+    background: #f0f0f0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .hero_content { padding: 0 40px; }
+}
+
+@media (max-width: 768px) {
+    .hero_content { padding: 0 20px; }
+    .hero_title { font-size: 40px; width: 100%; }
+    .hero_desc { width: 100%; }
+    .hero { height: 600px; }
+}

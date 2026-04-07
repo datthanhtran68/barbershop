@@ -1,35 +1,37 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import '../styles/Header.css'
 
 function Header() {
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+
   return (
-    <nav className="navbar navbar-expand-lg sticky-top">
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          CLASSIC BARBER
-        </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarMain">
-          <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Trang Chủ</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">Giới Thiệu</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/services">Dịch Vụ</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/gallery">Bộ Sưu Tập</Link>
-            </li>
-          </ul>
-          <Link className="btn btn-book" to="/booking">Đặt Lịch Ngay</Link>
-        </div>
+    <nav className="header">
+
+      <Link to="/" className="header_logo">BABER</Link>
+
+      <div className="header_nav">
+        <NavLink to="/" className={({ isActive }) => isActive ? 'header_link active' : 'header_link'}>
+          Trang chủ
+        </NavLink>
+
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'header_link active' : 'header_link'}>
+          Giới thiệu
+        </NavLink>
+
+        <NavLink to="/services" className={({ isActive }) => isActive ? 'header_link active' : 'header_link'}>
+          Dịch vụ
+        </NavLink>
+
+        <NavLink to="/gallery" className={({ isActive }) => isActive ? 'header_link active' : 'header_link'}>
+          Bộ sưu tập
+        </NavLink>
       </div>
+
+      <Link to="/booking" className="header_cta">ĐẶT LỊCH NGAY</Link>
+
     </nav>
-  );
+  )
 }
 
-export default Header;
+export default Header
