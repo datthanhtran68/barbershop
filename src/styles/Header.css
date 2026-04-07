@@ -1,0 +1,132 @@
+:root {
+    --font-main: 'Poppins', sans-serif;
+
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 24px;
+
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-light: 300;
+
+    /* Primary */
+    --color-primary: #000000;
+
+    /* Text */
+    --color-text: #000000;
+    --color-text-light: #52525B;
+
+    /* Background */
+    --color-bg: #ffffff;
+    --color-bg-light: #f5f5f5;
+
+    /* Border */
+    --color-border: #E2E8F0;
+
+    /* Hover */
+    --color-hover: #000;
+}
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 0 120px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-main);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header_logo {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--color-primary);
+    text-decoration: none;
+    letter: spacing 0;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: var(--fs-sm);
+}
+
+.header_link {
+    color: #555555;
+    text-decoration: none;
+    font-size: var(--fs-s);
+    font-weight: var(--fw-normal);
+}
+
+.header_link.active {
+    color: var(--color-primary);
+    font-weight: var(--fw-normal);
+}
+
+.header_dropdown {
+    position: relative;
+}
+
+.header_dropdown-toggle {
+    color: #555555;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header_dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    min-width: 160px;
+    z-index: 999;
+}
+
+.header_dropdown-item {
+    display: block;
+    padding: 10px 16px;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header_dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.header_dropdown-item:hover {
+    background: #f5f5f5;
+}
+
+.header_cta {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    width: 149px;
+    height: 44px;
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    letter-spacing: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_cta:hover {
+    background: #333333;
+    color: #ffffff;
+}
