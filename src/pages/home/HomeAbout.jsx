@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import './HomeAbout.css'
-import ss3 from '../../../assets/images/home/ss3.jpg'
+const ss3 = '/images/home/ss3.jpg'
 
 function HomeAbout() {
   return (

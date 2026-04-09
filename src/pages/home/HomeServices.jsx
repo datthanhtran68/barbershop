@@ -1,29 +1,5 @@
 import { Link } from 'react-router-dom'
-import './HomeServices.css'
-import dv1 from '../../../assets/images/home/dv1.png'
-import dv2 from '../../../assets/images/home/dv2.jpg'
-import dv3 from '../../../assets/images/home/dv3.png'
-
-const services = [
-  {
-    id: 1,
-    title: 'Cắt tóc',
-    price: '94,000 VNĐ',
-    img: dv1
-  },
-  {
-    id: 2,
-    title: 'Uốn tóc',
-    price: '386,000 VNĐ',
-    img: dv2
-  },
-  {
-    id: 3,
-    title: 'Nhuộm tóc',
-    price: '199,000 VNĐ',
-    img: dv3
-  }
-]
+import { SERVICES } from '@/constants/services'
 
 function HomeServices() {
   return (
@@ -34,7 +10,7 @@ function HomeServices() {
       </div>
 
       <div className="services_grid">
-        {services.map((service) => (
+        {SERVICES.map((service) => (
           <div key={service.id} className="service_card">
             <h3 className="service_card-name">{service.title}</h3>
             <div className="service_card-img-wrapper">

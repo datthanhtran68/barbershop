@@ -4,8 +4,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Header from './components/layout/Header/Header'
 import Footer from './components/layout/Footer/Footer'
-import Home from './pages/Home'
-import './styles/global.css'
+import { routes } from './routes'
 
 function AppContent() {
   useEffect(() => {
@@ -19,8 +18,9 @@ function AppContent() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        {/* Tạm thời ẩn các trang khác để tập trung vào Home */}
+        {routes.map((route, index) => (
+          <Route key={index} {...route} />
+        ))}
       </Routes>
       <Footer />
     </>

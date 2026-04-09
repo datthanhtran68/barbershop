@@ -53,6 +53,11 @@
     font-weight: var(--fw-semibold);
 }
 
+.header_cta:hover {
+    background: #333333;
+    color: var(--color-bg);
+}
+
 /* RESPONSIVE */
 .header_toggle {
     display: none;
