@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../styles/Footer.css'
+import './Footer.css'
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
 
         {/* Cột 1 - Thương hiệu */}
         <div>
-          <div className="footer_logo">BABER</div>
+          <div className="footer_logo">BARBER</div>
           <p className="footer_desc">
             Dịch vụ cắt tóc cao cấp dành cho quý ông hiện đại.
             Trải nghiệm nghệ thuật cắt tóc truyền thống

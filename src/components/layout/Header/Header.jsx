@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import '../styles/Header.css'
+import './Header.css'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -64,6 +64,7 @@ function Header() {
           </NavLink>
         </div>
       </div>
+
       <Link to="/booking" className="header_cta">ĐẶT LỊCH NGAY</Link>
     </nav>
   )
