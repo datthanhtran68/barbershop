@@ -52,7 +52,6 @@ function Footer() {
             </div>
             <div className="footer_hours-item">
               <span className="footer_hours-day">Thứ 7</span>
-
               <span className="footer_hours-time">10:00 - 18:00</span>
             </div>
             <div className="footer_hours-item">
