@@ -19,11 +19,14 @@ function HomeServices() {
             <p className="service_card-price">
               Giá từ: <strong>{service.price}</strong>
             </p>
-            <Link to={`/services/${service.id}`} className="service_card-btn">
-              Tìm hiểu thêm
-            </Link>
           </div>
         ))}
+      </div>
+
+      <div className="services_view-all">
+        <Link to="/services" className="btn_secondary">
+          Xem tất cả dịch vụ <span className="arrow">→</span>
+        </Link>
       </div>
     </section>
   )
