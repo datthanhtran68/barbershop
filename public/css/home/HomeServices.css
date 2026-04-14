@@ -86,12 +86,12 @@
     font-size: var(--fs-md);
     padding-bottom: 5px;
     border-bottom: 1px solid var(--color-primary);
-    margin-top: 15px;
+    margin-top: 60px;
     transition: all 0.3s ease;
 }
 
-.service_card-btn:hover {
-    background-color: #333333;
+.btn_secondary:hover {
+    padding-left: 10px;
 }
 
 @media (max-width: 1200px) {

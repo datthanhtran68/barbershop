@@ -1,0 +1,94 @@
+.about-story-section {
+    padding: 120px 0;
+    background-color: var(--color-bg);
+    width: 100%;
+}
+
+
+.about-story-container {
+    width: 100%;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+/* ẢNH BÊN TRÁI */
+.about-story-image {
+    flex: 1;
+}
+
+.about-story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* NỘI DUNG BÊN PHẢI */
+.about-story-content {
+    flex: 1;
+}
+
+.about-story-subtitle {
+    display: block;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-family: var(--font-main);
+    text-transform: lowercase;
+}
+
+.about-story-subtitle::first-letter {
+    text-transform: uppercase;
+}
+
+.about-story-title {
+    font-size: 36px;
+    /* Giữ nguyên size lớn cho tiêu đề chính để đẹp như ảnh mẫu */
+    font-weight: var(--fw-bold);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: var(--font-main);
+}
+
+.about-story-paragraphs p {
+    font-size: var(--fs-md);
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-family: var(--font-main);
+    font-weight: var(--fw-normal);
+}
+
+.about-story-paragraphs p:last-child {
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .about-story-container {
+        padding: 0 40px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-story-container {
+        flex-direction: column;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .about-story-image,
+    .about-story-content {
+        width: 100%;
+    }
+
+    .about-story-title {
+        font-size: 32px;
+    }
+}

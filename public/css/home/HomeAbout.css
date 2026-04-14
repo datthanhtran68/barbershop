@@ -64,10 +64,6 @@
     padding-left: 10px;
 }
 
-.about_link .arrow {
-    margin-left: 10px;
-}
-
 @media (max-width: 1200px) {
     .home_about {
         padding: 80px 40px;

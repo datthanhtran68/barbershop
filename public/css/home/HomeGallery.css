@@ -8,14 +8,14 @@
     font-size: 40px;
     font-weight: var(--fw-bold);
     color: var(--color-primary);
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .gallery_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .gallery_item {
@@ -67,7 +67,7 @@
     .gallery_grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .gallery_title {
         font-size: 32px;
     }
