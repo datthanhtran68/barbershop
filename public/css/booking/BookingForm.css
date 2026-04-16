@@ -1,0 +1,134 @@
+.booking_content {
+    padding: 59px 120px 59px 120px;
+    background-color: var(--color-bg);
+}
+
+.booking_content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.booking_section-title {
+    font-size: 16px;
+    font-weight: var(--fw-medium);
+    margin-bottom: 8px;
+    color: var(--color-primary);
+}
+
+.booking_section-subtitle {
+    font-size: 14px;
+    color: var(--color-text-light);
+    margin-bottom: 32px;
+}
+
+/* Form Styles */
+.booking_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.form_group label {
+    font-size: 14px;
+    font-weight: var(--fw-medium);
+    color: var(--color-primary);
+}
+
+.form_group input,
+.form_group select {
+    padding: 10px 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+.form_group input:focus,
+.form_group select:focus {
+    border-color: var(--color-primary);
+}
+
+.form_row {
+    display: flex;
+    gap: 20px;
+}
+
+.btn_submit {
+    margin-top: 10px;
+    padding: 16px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: var(--fw-semibold);
+    cursor: pointer;
+    transition: opacity 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn_submit:hover {
+    opacity: 0.9;
+}
+
+/* Branch Cards */
+.branches_list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.branch_card {
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 0px;
+    transition: box-shadow 0.2s;
+}
+
+.branch_card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.branch_card h3 {
+    font-size: 16px;
+    font-weight: var(--fw-medium);
+    margin-bottom: 12px;
+}
+
+.branch_card p {
+    font-size: 14px;
+    color: var(--color-text-light);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.branch_card .branch_hours {
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .booking_content-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form_row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

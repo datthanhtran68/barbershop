@@ -2,6 +2,7 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Services from '../pages/Services'
 import Gallery from '../pages/Gallery'
+import Booking from '../pages/Booking'
 
 export const routes = [
   {
@@ -20,5 +21,9 @@ export const routes = [
   {
     path: '/gallery',
     element: <Gallery />
+  },
+  {
+    path: '/booking',
+    element: <Booking />
   }
 ]
