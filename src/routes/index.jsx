@@ -1,5 +1,7 @@
 import Home from '../pages/Home'
 import About from '../pages/About'
+import Services from '../pages/Services'
+import Gallery from '../pages/Gallery'
 
 export const routes = [
   {
@@ -10,5 +12,13 @@ export const routes = [
   {
     path: '/about',
     element: <About />
+  },
+  {
+    path: '/services',
+    element: <Services />
+  },
+  {
+    path: '/gallery',
+    element: <Gallery />
   }
 ]
