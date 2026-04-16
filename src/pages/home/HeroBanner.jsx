@@ -7,7 +7,7 @@ function HeroBanner() {
             <img src={bannerImg} alt="Hero Banner" className="hero_bg" />
             <div className="hero_overlay" />
             <div className="hero_content">
-                <h1 className="hero_title">Nghệ thuật cắt tóc truyền thống</h1>
+                <h1 className="hero_title">Cắt Tóc Nghệ Thuật</h1>
                 <p className="hero_desc">
                     Trải nghiệm dịch vụ cắt tóc cao cấp trong không gian sang trọng.
                     Đội ngũ thợ lành nghề mang đến những kiểu tóc chính xác
