@@ -22,13 +22,14 @@
 
 @media (max-width: 1024px) {
   .services_hero {
-    padding: 60px 40px 30px 40px;
+    padding: 20px 20px 20px 20px;
+    height: 230px;
   }
 }
 
 @media (max-width: 768px) {
   .services_hero {
-    padding: 40px 20px 20px 20px;
+    padding: 59px 20px 59px 20px;
   }
 
   .services_hero-title {

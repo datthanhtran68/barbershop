@@ -135,6 +135,11 @@
 }
 
 @media (max-width: 992px) {
+
+    .booking_content {
+        padding: 20px 20px 20px 20px;
+    }
+
     .booking_content-grid {
         grid-template-columns: 1fr;
         gap: 60px;
