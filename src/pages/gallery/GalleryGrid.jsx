@@ -2,8 +2,7 @@ import { useState } from 'react'
 import { GALLERY_CATEGORIES, GALLERY_IMAGES } from '@/constants/gallery'
 
 function GalleryGrid() {
-  const [activeCategory, setActiveCategory] = useState('mullet') // Defaulting to mullet as per image
-
+  const [activeCategory, setActiveCategory] = useState('mullet')
   const filteredImages = activeCategory === 'all'
     ? GALLERY_IMAGES
     : GALLERY_IMAGES.filter(img => img.category === activeCategory)

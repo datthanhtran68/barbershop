@@ -8,7 +8,7 @@ function BookingForm() {
         <div className="booking_form-wrapper">
           <h2 className="booking_section-title">Thông tin đặt lịch</h2>
           <p className="booking_section-subtitle">Điền vào biểu mẫu bên dưới và chúng tôi sẽ xác nhận đặt lịch của bạn</p>
-          
+
           <form className="booking_form">
             <div className="form_group">
               <label>Họ và tên</label>
@@ -59,14 +59,16 @@ function BookingForm() {
         <div className="booking_branches-wrapper">
           <h2 className="booking_section-title">Các cơ sở</h2>
           <p className="booking_section-subtitle">Ghé thăm một trong ba cơ sở thuận tiện của chúng tôi</p>
-          
+
           <div className="branches_list">
             {BRANCHES.map((branch, index) => (
               <div key={index} className="branch_card">
                 <h3>{branch.name}</h3>
-                <p className="branch_address">{branch.address}</p>
-                <p className="branch_phone">{branch.phone}</p>
-                <p className="branch_hours">{branch.hours}</p>
+                <div className="branch_info">
+                  <p className="branch_address">{branch.address}</p>
+                  <p className="branch_phone">{branch.phone}</p>
+                  <p className="branch_hours">{branch.hours}</p>
+                </div>
               </div>
             ))}
           </div>

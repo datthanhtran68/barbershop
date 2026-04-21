@@ -51,8 +51,8 @@
 }
 
 .footer_heading {
-    font-size: var(--fs-sm);
-    font-weight: var(--fw-bold);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-semibold);
     color: var(--color-primary);
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -83,7 +83,7 @@
 }
 
 .footer_hours-day {
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-semibold);
 }
 
 .footer_contact-item,
